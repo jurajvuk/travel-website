@@ -63,6 +63,9 @@ button:hover {
 .main-head {
     background: #131c27;
     color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
 }
 
 nav {
@@ -189,16 +192,104 @@ nav ul {
 }
 
 .card {
-    background: yellow;
-    flex: 1 1 25rem;
+    flex: 1 1 30rem;
     min-height: 40vh;
     margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.1), 0px 20px 20px rgb(0, 0, 0, 0.1);
+    text-align: center;
 }
+
+.card h4, p {
+    padding: 1rem; 
+    line-height: 2;  
+}
+
+
 
 .cards img {
-    width: 100px;
+    max-width: 15%;
+    margin: 2rem;
 }
 
+.card-icon {
+    background: #3d5879;
+}
+
+/* Contact Section */
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), transparent) ,url('/img/contact-mountain.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.8);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form, .email-form {
+    text-align: center;
+    padding: 4rem;
+}
+
+.form-wrapper label {
+    margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+}
+
+footer {
+    color: white;
+    background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h5 {
+    flex: 1 1 40rem;
+}
+
+button:focus {
+    background: #293a4e;
+    outline-style: solid;
+}
 
 /* MEDIA Query */
 @media screen and (max-width: 911px) {
@@ -230,5 +321,15 @@ nav ul {
     .locations-head h3{
         background: rgba(19, 28, 39, 0.8);
         -webkit-text-fill-color: white;
+    }
+    .form-wrapper {
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+
+    footer h5{
+        padding-bottom: 3rem;
     }
 }
