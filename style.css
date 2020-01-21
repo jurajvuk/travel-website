@@ -186,19 +186,46 @@ nav ul {
     align-items: center;
     flex-wrap: wrap;
     min-height: 70vh;
+    text-align: center;
 }
 
 .card {
-    background: yellow;
-    flex: 1 1 25rem;
+    flex: 1 1 30rem;
     min-height: 40vh;
     margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    background: #3d5879;
+}
+
+.card h4, p{
+    padding: 2rem;
 }
 
 .cards img {
-    width: 100px;
+    max-width: 15%;
+    margin: 2rem;
 }
 
+
+/* Cantact Section */
+#contact {
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), transparent) ,url('/img/contact-mountain.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.8);
+    width: 60%;
+}
 
 /* MEDIA Query */
 @media screen and (max-width: 911px) {
